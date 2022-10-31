@@ -1,0 +1,20 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div#color-bingo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+p#hex-value {
+    background-color: #ccc;
+    font-size: 5.5rem;    
+}
