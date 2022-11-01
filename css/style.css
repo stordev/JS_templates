@@ -1,0 +1,43 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: inherit;
+  margin: inherit;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+.task-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.task-list li {
+  background-color: burlywood;
+  list-style-type: none;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.task-list li:hover, .task-list li:hover a {
+  background-color: bisque;
+}
+
+.task-list a {
+  border-radius: 2rem;
+  text-decoration:none;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: #000;
+}
