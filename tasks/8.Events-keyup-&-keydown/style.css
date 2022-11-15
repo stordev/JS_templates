@@ -1,0 +1,27 @@
+body {
+  background-color: #ccc;
+  padding: 20px;
+}
+
+input {
+  font-size: 26px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+
+.test-block {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: #888;
+  padding: 20px;    
+}
+
+.test-node {
+  background-color: darkgreen;
+  width: 50px;
+}
