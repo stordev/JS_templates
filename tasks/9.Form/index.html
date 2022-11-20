@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <form method="post" class="form" action="result.html">
+
+            <div class="form__group login">
+                <div class="form__item">
+                    <label for="user-name" class="required">Username</label>
+                    <input type="text" name="user-name" id="user-name" minlength="3"
+                        placeholder="Minimum 3 characters required" required>
+                    <span></span>
+                </div>
+                <div class="form__item">
+                    <label for="email" class="required">Email</label>
+                    <input type=" email" name="email" id="email" minlength="7" placeholder="---@---.---">
+                </div>
+                <div class="form__item">
+                    <label for="password" class="required">Password</label>
+                    <input type="password" name="password" id="password" minlength="3"
+                        placeholder="Minimum 3 characters" required>
+                </div>
+                <div class="form__item">
+                    <label for="password-confirm" class="required">Confirm Password</label>
+                    <input type="password" name="password-confirm" id="password-confirm" minlength="3"
+                        placeholder="Minimum 3 characters" required>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <div class=" form__item">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+1 234 567 890">
+                </div>
+                <div class="form__item">
+                    <label for="date">Birthday</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="form__item">
+                    <p>Sex</p>
+                    <div class="form__item--radio">
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                        <label><input type="radio" name="gender" value="other" required>Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" form__group">
+                <div class="form__item">
+                    <label for="file">Photo (jpg, png)</label>
+                    <input type="file" name="file" id="file" accept="jpg, png">
+                </div>
+                <div class="form__item">
+                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter your message">
+                        </textarea>
+                </div>
+                <div class="form__item subcribe">
+                    <div>
+                        <input type="checkbox" name="subcribe" id="subcribe">
+                        <label for="subcribe">Subcribe</label>
+                    </div>
+                    <div>
+                        <label for="frequency">Frequency</label>
+                        <select name="frequency" id="frequency">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__item">
+                <div>
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <input type="submit" value="Submit" class="submit" id="submit" disabled>
+            </div>
+
+        </form>
+    </main>
+
+
+    <script src=" ./script.js">
+    </script>
+</body>
+
+</html>

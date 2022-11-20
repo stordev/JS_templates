@@ -1,0 +1,136 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  background-color: green;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.form {  
+  width: fit-content;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  margin: 1rem auto 0;
+  font-size: 1.5rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2em;
+}
+
+.form__item {
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;
+  row-gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;  
+}
+
+input {  
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+input:focus, .form textarea:focus {    
+  outline: none;
+  box-shadow: 0 0 0 3px blue;  
+}
+
+.form__item--radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: darkgray;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5rem;  
+}
+input[type="radio"]:checked {
+  background-color: darkblue;
+}
+
+input[type=checkbox] {  
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.2rem;
+  border: 1px solid white;
+  background-color: darkgray;
+  outline: none;
+  cursor: pointer;  
+}
+
+input[type=file] {    
+  width: 70%;  
+}
+
+.submit {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.submit:hover {
+  background-color: darkblue;
+}
+
+.form *:disabled {
+  background-color: darkgray;
+  color: gray;
+  cursor: not-allowed;
+}
+
+select {
+  padding: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;  
+}
+
+.required:before {
+  content: "*";
+  color: orange;
+  margin-right: 0.5rem;
+}
+
+.error {
+  box-shadow: 0 0 0 10px red;
+}
+
+.was-validated .form__item input:invalid, .was-validated .form__item textarea:invalid {
+  box-shadow: 0 0 0 8px red;
+}
+
+.is-invalid, .is-invalid:focus{
+  border: 5px solid #ff0;
+}
