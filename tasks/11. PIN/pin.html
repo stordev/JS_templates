@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Enter PIN</title>
+</head>
+
+<body>
+
+    <main>
+
+        <form method="post" action="#" id="form-pin" class="form form-pin">
+            <label for="pin">Enter your PIN</label>
+            <div class="form-pin__group">
+                <input type="text" name="pin" class="form-pin__input" required>
+            </div>
+            <p class="form__error-text hidden">Pin is incorrect</p>
+            <p class="form__error-text hidden">Please enter a valid PIN number</p>
+            <input type="submit" value="Verify PIN" id="submit" class="btn verifyBtn">
+        </form>
+
+        <script src="scriptPin.js"></script>
+
+    </main>
+
+</body>
+
+</html>
