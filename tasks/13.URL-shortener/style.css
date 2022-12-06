@@ -1,0 +1,73 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;  
+}
+
+body {
+  background-color: #2e2f4a;  
+  justify-content: center;  
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+}
+
+.input-box input {
+  height: 40px;
+  padding: 10px;
+  outline: none;
+}
+
+.input-box input:focus {
+  border: 1px solid blue;
+}
+
+.input-box input[type="text"] {
+  width: 50%;
+}
+
+.results {
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;  
+  margin-top: 20px;
+  color: #fff;  
+}
+
+.hidden {
+  display: none;
+}
+
+
+.btn {  
+  background-color: #000;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;  
+}
+
+.btn:hover {
+  background-color: #333;
+  cursor: pointer;  
+  box-shadow: 0 0 5px #000;
+}
+
+#shortURL {
+  background-color: orange;
+}
+
+#copyBtn {
+  background-color: transparent;  
+}
+
+#copyBtn:before {
+  content: "\1F4CB";
+}

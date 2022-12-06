@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <Title>URL shortener</Title>
+</head>
+
+<body>
+    <main>
+
+        <form method="POST" class="input-box">
+            <input id="longURL" type="text" placeholder="Enter URL" autofocus>
+            <input id="shortenBtn" class="btn" type="submit" value="Shorten">
+        </form>
+
+        <div class="results hidden">
+            <p>Shortened URL:</p>
+            <a id="shortURL"></a>
+            <button id="copyBtn" class="btn"></button>
+        </div>
+    </main>
+
+    <script src="./script.js">
+    </script>
+</body>
+
+</html>
