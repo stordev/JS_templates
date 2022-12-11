@@ -1,0 +1,35 @@
+{
+    "home": {
+        "title": "Home | Title",
+        "subtitle": "Home | Subtitle",
+        "body": [
+            "<b>Content of the webpage</b>",
+            "<ul>",
+            "<li><a href='./about.html'>About</a></li>",
+            "<li><a href='./contacts.html'>Contacts</a></li>",
+            "</ul>"
+        ]
+    },
+    "about": {
+        "title": "About | Title",
+        "subtitle": "About | Subtitle",
+        "body": [
+            "<b>Content of the webpage</b>",
+            "<ul>",
+            "<li><a href='./'>Home</a></li>",
+            "<li><a href='contacts.html'>Contacts</a></li>",
+            "</ul>"
+        ]
+    },
+    "contacts": {
+        "title": "Contacts | Title",
+        "subtitle": "Contacts | Subtitle",
+        "body": [
+            "<b>Content of the webpage</b>",
+            "<ul>",
+            "<li><a href='./'>Home</a></li>",
+            "<li><a href='about.html'>About</a></li>",
+            "</ul>"
+        ]
+    }
+}
