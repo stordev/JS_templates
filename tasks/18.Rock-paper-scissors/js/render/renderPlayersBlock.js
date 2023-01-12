@@ -42,6 +42,9 @@ class PlayerBlock {
         requestData({
             url: `${playListURL}?token=${this.token}`,
             callback: (data) => {
+                if (window.application.players === data.list) {
+                    return; // do not update if nothing changed
+                }
                 window.application.players = data.list;
                 this.fillPlayersBlock();
             }
