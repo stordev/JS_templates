@@ -1,0 +1,126 @@
+@import 'vars';
+
+*,
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40*$r;
+    background-color: #353740;
+    color: #fff;
+    padding: 0 120*$r;
+}
+
+header {
+    background: url(../../img/top.svg) top center / cover no-repeat;
+    background-size: 320*$r 190*$r;
+    height: 190*$r;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30*$r;
+}
+
+h1 {
+    min-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: 600;
+    font-size: 28*$r;
+}
+
+.form {
+    font-family: 'Roboto';
+    font-size: 14*$r;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 30*$r;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8*$r;
+    }
+
+    &__input {
+        min-width: 278*$r;
+        padding: 10*$r 0 10*$r 20*$r;
+        border-radius: 30*$r;
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    &__input:focus {
+        outline: none;
+    }
+
+    &__label {
+        padding-left: 20*$r;
+    }
+}
+
+footer {
+    font-size: 10*$r;
+    color: #ccc;
+    text-align: center;
+    margin-top: auto;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30*$r;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    min-width: 278*$r;
+    font-family: inherit;
+    font-size: 16*$r;
+    padding: 10*$r 0;
+    background: #580EA2;
+    border-radius: 8*$r;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #4a0c8f;
+    }
+
+    &:disabled {
+        background: #888;
+        color: #fff;
+        cursor: not-allowed;
+    }
+
+    &:disabled:hover {
+        background: #C4C4C4;
+        color: #fff;
+        cursor: not-allowed;
+    }
+}
+
+.content {
+    row-gap: 30*$r;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; // fill the remaining space
+}
