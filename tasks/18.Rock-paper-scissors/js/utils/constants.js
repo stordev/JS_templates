@@ -1,0 +1,4 @@
+const backURL = `https://skypro-rock-scissors-paper.herokuapp.com`;
+export const loginURL = `${backURL}/login`;
+export const playListURL = `${backURL}/player-list`;
+
